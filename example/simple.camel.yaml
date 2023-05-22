@@ -1,0 +1,19 @@
+- rest:
+    id: rest-32d3
+    get:
+      - id: get-1f29
+        path: /say/hello
+        to: direct:sayHello
+        produces: application/json
+- route:
+    id: route-097d
+    from:
+      uri: direct:sayHello
+      id: from-12a4
+      steps:
+        - setBody:
+            id: setBody-c568
+            expression:
+              simple:
+                expression: '{ "hello" : "world" }'
+                id: simple-cbae
