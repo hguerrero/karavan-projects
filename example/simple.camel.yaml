@@ -15,5 +15,5 @@
             id: setBody-c568
             expression:
               simple:
-                expression: '{ "hello" : "world" }'
+                expression: '{ "hello" : "summit" }'
                 id: simple-cbae
